@@ -1,0 +1,80 @@
+/* defaults */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato' ,sans-serif;
+}
+
+body{
+    height:  100vh;
+    background: url(https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center/cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-task-container{
+   width: 350px;
+   padding: 20px 10px;
+   background-color: #d8cdcd;
+   border-radius: 10px;
+   box-shadow: 0,0,3px;
+   border: 2px solid #cfafaf ;
+   display: flex;
+}
+
+input{
+    flex: 5;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+#add-task{
+    flex:  .6;
+    font-size: 1.2rem;
+    padding: 5px;
+    color: red;
+    border: 2px solid rgb(144, 116, 116);
+    border-radius: 5px ;
+}
+
+#add-task:hover{
+    background-color: green;
+    color: #fff;
+}
+
+.task{
+    width: 350px;
+    background-color: #e5d9af;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    border:  2px solid rgb(144, 116, 116);
+    margin-bottom: 5px;
+}
+
+.task li{
+    list-style: circle;
+    flex: 4;
+    padding: 5px;
+    font-size:  1.3rem;
+    margin: 5px;
+}
+
+.task.button{
+    flex:  1;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.task .checkTask{
+    color: orange;
+    
+}
